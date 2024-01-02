@@ -9,6 +9,11 @@ a {
   text-decoration: none;
 }
 
+a .btn {
+  text-decoration: none;
+
+}
+
 /* fontes */
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
@@ -41,6 +46,7 @@ body {
 
 .fundo {
   width: 100%;
+
 }
 
 .fundo img {
@@ -178,11 +184,12 @@ body {
 
 @media screen and (max-width: 390px) {
   .fundo {
-    width: 100%;
+    width: auto;
+
   }
 
   .fundo img {
-    width: 100vw;
+    width: 100vh;
     max-width: 100%;
     height: auto;
     display: block;
@@ -213,16 +220,17 @@ body {
     background-color: #664a9f;
     padding: 10px;
     width: 90px;
-    height: 90px;
+    height: 60px;
     color: white;
   }
 
   .icon_card {
+    display: block;
     width: 40px;
     height: 40px;
     position: relative;
-    top: -20px;
-    margin-left: -8px;
+    top: -10px;
+    margin-left: -15px;
   }
 
   /************************** TAMANHO DAS LETRAS **********************/
@@ -245,30 +253,35 @@ body {
     font-weight: 1px;
     /* color: #664a9f; */
     max-width: 300px;
-    margin-top: 0%;
+    margin-top: -6%;
   }
 
   .texto_card1 {
-    font-size: 0.6em;
+    display: flex;
+    font-size: 0.5em;
     font-weight: bold;
     margin-bottom: 5px;
-    margin-top: -30px;
+    margin-top: -34px;
+    margin-left: 20px;
   }
 
   .texto_card1Insta {
-    font-size: 0.6em;
+    font-size: 0.4em;
     font-weight: bold;
     margin-bottom: 10px;
-    margin-top: -30px;
+    margin-top: -34px;
+    margin-left: 20px;
   }
 
   .texto_card2 {
-    font-size: 0.55em;
+    font-size: 0.5em;
+    margin-top: 15px;
   }
 
   .texto_card2Insta {
-    font-size: 0.5em;
-    margin-top: -7px;
+    font-size: 7.4px;
+    margin-top: 15px;
+
   }
 
   .texto3 {
@@ -422,6 +435,40 @@ body {
 
   .btn_texto_alt1 {
     line-height: 1;
+  }
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+  .secao_header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -100px;
+  }
+
+  .texto3 {
+    font-size: 2em;
+    color: #664a9f;
+    font-family: 'Montserrat';
+  }
+
+}
+
+
+@media screen and (min-width:1200px) {
+  .secao_header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -200px;
+  }
+
+  .texto3 {
+    font-size: 2em;
+    color: #664a9f;
+    font-family: 'Montserrat';
   }
 
 }
